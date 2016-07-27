@@ -11,7 +11,7 @@
 %endif
 
 Name:syncthing
-Version:0.11.19
+Version:0.14.2
 Release:1.0%{?dist}
 Summary:Syncthing
 License:MIT
@@ -62,6 +62,9 @@ install -p -m 0644 %{S:1} %{buildroot}%{_unitdir}
 
 
 %changelog
+* Wed Jul 27 2016 Ben Ooijevaar <ben.ooijevaar@gmail.com> 0.14.2-1
+- Version bump
+
 * Mon Aug 10 2015 Ben Ooijevaar <ben.ooijevaar@gmail.com> 0.11.19-1
 - Version bump
 
