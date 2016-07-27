@@ -15,10 +15,9 @@ Version:0.14.2
 Release:1.0%{?dist}
 Summary:Syncthing
 License:MIT
-URL:http://syncthing.net/
-Source0:https://github.com/%{name}/%{name}/releases/download/v%{version}/%{name}-linux-%{altarch}-v%{version}.tar.gz
+URL:		http://syncthing.net/
+Source0:	https://github.com/%{name}/%{name}/archive/v%{version}.tar.gz
 Source1:	syncthing@.service
-Source2:	%{name}-linux-386-v%{version}.tar.gz
 ExclusiveArch:  x86_64 %{ix86}
 BuildRequires:  systemd
 
@@ -56,7 +55,7 @@ install -p -m 0644 %{S:1} %{buildroot}%{_unitdir}
 %systemd_postun_with_restart %{name}@.service
 
 %files
-%doc  %{name}-linux-%{altarch}-v%{version}/README.txt %{name}-linux-%{altarch}-v%{version}/LICENSE.txt %{name}-linux-%{altarch}-v%{version}/AUTHORS.txt
+%doc  %{name}-%{altarch}-v%{version}/README.txt %{name}-%{altarch}-v%{version}/LICENSE.txt %{name}-%{altarch}-v%{version}/AUTHORS.txt
 %{_bindir}/syncthing
 %{_unitdir}/%{name}@.service
 
