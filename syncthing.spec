@@ -17,7 +17,7 @@ Summary:Syncthing
 License:MIT
 URL:		http://syncthing.net/
 Source0:	https://github.com/%{name}/%{name}/archive/v%{version}.tar.gz
-Source1:	syncthing@.service
+Source1:	https://raw.githubusercontent.com/BenOoi/syncthing_rpm/master/syncthing@.service
 ExclusiveArch:  x86_64 %{ix86}
 BuildRequires:  systemd
 
