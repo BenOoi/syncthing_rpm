@@ -25,7 +25,8 @@ systemctl enable syncthing@username.service
 Fedora Repository Installation
 
 
-Fedora Copr Repository : http://copr.fedoraproject.org/coprs/thunderbirdtr/Syncthing_for_Fedora/
+Fedora Copr Repository 1: http://copr.fedoraproject.org/coprs/thunderbirdtr/Syncthing_for_Fedora/
+Fedora Copr Repository 2: https://copr.fedoraproject.org/coprs/beno/syncthing/
 
 
 Website : http://syncthing.net/
