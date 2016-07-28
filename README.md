@@ -3,6 +3,9 @@ Syncthing RPM Package for Fedora
 
 This repository allows you to make an RPM package for Syncthing on Fedora systems. I also created a first RPM package for i686/x64 and added to the RPMS folder if you want to install the Syncthing service to system for your own usage. 
 
+Create (S)RPM: rpmbuild --define "_topdir `pwd`" -ba syncthing.spec
+
+
 After installation usage : 
 
 RPM packages add "syncthing" and "syncthing@.service" that allows you to run "syncthing" service for each user and create their own config file, thus Syncthing will not conflict with other conf files.
